@@ -14,5 +14,5 @@ export default {
 			pixel: ["Jersey\\ 15"],
 		},
 	},
-	plugins: [],
+	plugins: [require("@tailwindcss/typography")],
 };

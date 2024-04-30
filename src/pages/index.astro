@@ -1,7 +1,203 @@
 ---
+import Prose from "../components/Prose.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Lucas Castro">
-	<main></main>
+	<div class="mt-8"></div>
+
+	<div class="flex flex-col items-center gap-y-6">
+		<div
+			class="bg-white max-w-max p-2 rounded-full shadow-sm ring-1 ring-gray-200/50 -rotate-2"
+		>
+			<img
+				src="/me.jpg"
+				alt=""
+				class="bg-gray-200 rounded-full w-20 sm:w-24"
+			/>
+		</div>
+
+		<Prose>
+			<p class="text-center">
+				Welcome! My name is
+				<span class="font-medium text-gray-800">Lucas Castro</span>. I'm
+				a software engineer based in Austin, TX.
+			</p>
+			<p class="text-center">
+				I’m an engineer at <a
+					href="https://trinsic.id"
+					class="!text-[#006be5]">Trinsic</a
+				> working on their core identity product built in
+				<span class="!text-gray-800 font-medium">TypeScript</span>,
+				<span class="!text-gray-800 font-medium">React</span>, and the
+				<span class="!text-gray-800 font-medium">.NET framework</span>.
+			</p>
+			<p class="text-center">
+				I'm also a father, later-day saint, and life-long learner.
+			</p>
+		</Prose>
+	</div>
+
+	<Prose class="mt-8 prose-h2:text-lg">
+		<h2 class="text-center border-b text-teal-600">Work experience</h2>
+		<ul>
+			<li>
+				<a href="https://trinsic.id" target="blank">Trinsic</a>
+				(feb 2023 – present): Founding engineer in the product team; identity
+				verification software; iterating fast to find product market fit.
+			</li>
+			<li>
+				<a href="https://utahcounty.gov">Utah County Gov.</a>
+				(aug 2022 – feb 2023): Web programmer in the information systems
+				department.
+			</li>
+			<li>
+				<a href="https://pluralsight.com">Pluralsight</a> (summer 2022):
+				Software engineering intern.
+			</li>
+			<li>
+				<a href="https://cs.byu.edu/"> BYU STaPL</a> (fall 2021 - winter
+				2022): Research assistant in the Social Technologies and Privacy
+				Lab (STaPL).
+			</li>
+		</ul>
+
+		<h2 class="text-center border-b text-teal-600">Links</h2>
+		<ul>
+			<li>
+				<a
+					href="https://gist.github.com/lucasamonrc/7babe1656b13b3f5e712e5d2898e29de"
+				>
+					Trinsic Connect</a
+				> (5 min): Try Trinsic Connect. My startup's product demo.
+			</li>
+			<li>
+				<a href="https://www.youtube.com/watch?v=BKbXrQ0z-FY">
+					Using GitHub Copilot to Learn a New Programming Language</a
+				> (9 min): Lightning talk presented in the UtahJS conference in September
+				2023. <br />
+				<a
+					href="https://lucasamonrc.notion.site/Using-GitHub-Copilot-to-Learn-a-New-Programming-Language-628798370d784008a5a3e14f3280252c?pvs=4"
+					class="!font-normal"
+				>
+					Talk notes
+				</a>
+			</li>
+			<li>
+				<a
+					href="https://lucasamonrc.notion.site/Getting-Started-with-Coding-Problems-and-Interviews-5e6e90372e4d4dcaacfd49a1aa5dbdea"
+					>Resources for Coding Problems and Interviews</a
+				> (1 min): Compiled resources that helped me prepare coding interviews
+				during my senior year.
+			</li>
+			<li>
+				<a
+					href="https://gist.github.com/lucasamonrc/7babe1656b13b3f5e712e5d2898e29de"
+				>
+					My git config</a
+				> (1 min): My personal git configuration with the aliases I use.
+			</li>
+			<li>
+				<a
+					href="https://gist.github.com/lucasamonrc/35b8a0fc37f419b63dfc9ebd8af5b371"
+					>My terminal setup</a
+				> (5 min): Instructions on how to configure my custom prompt for
+				the zsh shell with some additional plugins.
+			</li>
+		</ul>
+
+		<h2 class="text-center text-teal-600 !mb-0">2024 Reading List</h2>
+		<small class="block !mt-0 border-b text-center text-gray-600">
+			(books, talks, articles, courses, etc.)
+		</small>
+		<ul>
+			<li class="line-through text-gray-500">
+				<a
+					href="https://www.amazon.com/Code-Book-Science-Secrecy-Cryptography/dp/0385495323"
+					class="!text-gray-500 !font-normal"
+				>
+					The Code Book
+				</a>
+			</li>
+			<li class="line-through text-gray-500">
+				<a
+					href="https://frontendmasters.com/courses/fullstack-v3/"
+					class="!text-gray-500 !font-normal"
+				>
+					Full Stack for Front End Engineers, v3
+				</a>
+			</li>
+			<li class="line-through text-gray-500">
+				<a
+					href="https://frontendmasters.com/courses/htmx/"
+					class="!text-gray-500 !font-normal"
+				>
+					HTMX & Go
+				</a>
+			</li>
+			<li class="line-through text-gray-500">
+				<a
+					href="https://12factor.net/"
+					class="!text-gray-500 !font-normal"
+				>
+					The Twelve-Factor App
+				</a>
+			</li>
+			<li class="line-through text-gray-500">
+				<a
+					href="https://www.neil.blog/full-speech-transcript/68-bits-of-unsolicited-advice-by-kevin-kelly"
+					class="!text-gray-500 !font-normal"
+				>
+					'68 Bits of Unsolicited Advice ' by Kevin Kelly
+				</a>
+			</li>
+			<li class="line-through text-gray-500">
+				<a
+					href="https://www.fortressofdoors.com/i-lost-my-son/"
+					class="!text-gray-500 !font-normal"
+				>
+					Losing My Son
+				</a>
+			</li>
+			<li>
+				<a href="https://www.craftinginterpreters.com/contents.html">
+					Crafting interpreters
+				</a>
+			</li>
+			<li>
+				<a href="https://www.amazon.com/dp/173210221X/">
+					A Philosophy of Software Design
+				</a>
+			</li>
+			<li>
+				<a href="https://www.amazon.com/dp/0262510871">
+					Structure and Interpretation of Computer Programs
+				</a>
+			</li>
+			<li>
+				<a href="https://frontendmasters.com/courses/devops/">
+					Introducing DevOps for Developers
+				</a>
+			</li>
+			<li>
+				<a
+					href="https://frontendmasters.com/courses/enterprise-devops/"
+				>
+					Enterprise DevOps & Cloud Infrastructure
+				</a>
+			</li>
+			<li>
+				<a href="https://frontendmasters.com/courses/web-auth-apis/">
+					Web Authentication APIs
+				</a>
+			</li>
+			<li>
+				<a
+					href="https://frontendmasters.com/courses/developer-productivity/"
+				>
+					Developer Productivity
+				</a>
+			</li>
+		</ul>
+	</Prose>
 </Layout>
